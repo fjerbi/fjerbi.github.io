@@ -1,0 +1,310 @@
+import { author, socialLinks } from '@/lib/content/portfolio';
+import {
+  AboutSectionType,
+  ContactSectionType,
+  ExperienceSectionType,
+  FooterSectionType,
+  HeroSectionType,
+  NavbarSectionType,
+  ProjectsSectionType,
+  SkillsSectionType,
+  SocialSectionType,
+} from '@/lib/types/sections';
+
+import { resumeFileName } from './config';
+import { getId } from './helper';
+
+/*
+ * =========================
+ * SECTIONS
+ * =========================
+ */
+
+// Navbar Section
+
+export const navbarSection: NavbarSectionType = {
+  navLinks: [
+    { name: 'about', url: '/#about' },
+    { name: 'skills', url: '/#skills' },
+    { name: 'experience', url: '/#experience' },
+    { name: 'projects', url: '/#projects' },
+    { name: 'contact', url: '/#contact' },
+  ],
+  cta: {
+    title: 'resume',
+    url: `/${resumeFileName}`,
+  },
+};
+
+// * Hero Section
+
+export const heroSection: HeroSectionType = {
+  subtitle: 'Hi, my name is',
+  title: 'Firas Jerbi.',
+  tagline: "I'm a Software Engineer | Full-Stack Developer",
+  description:
+    "I'm a passionate Full-Stack Developer, I worked on multiple projects on both web and mobile.",
+  specialText: 'Currently available for a job',
+  cta: {
+    title: 'see my resume',
+    url: `/${resumeFileName}`,
+    hideInDesktop: true,
+  },
+};
+
+// * About Section
+
+export const aboutSection: AboutSectionType = {
+  title: 'about me',
+  // Paragraphs need to be changed from containers/About.tsx
+  // Because it wasn't possible to insert anchor tags like this
+  list: {
+    title: 'Here are a few technologies I’ve been working with recently:',
+    items: [
+      'ReactJs',
+      'React-Native',
+      'Angular',
+      'Ionic',
+      'Typescript',
+      'Symfony',
+      'Laravel',
+      'NextJs',
+      'TailwindCSS',
+      'ExpressJs',
+    ],
+  },
+  img: '/firasjerbi.jpg',
+};
+
+// * Skills Section
+
+export const skillsSection: SkillsSectionType = {
+  title: 'what i do',
+  skills: [
+    {
+      id: getId(),
+      title: 'full stack development',
+      // animation lottie file: https://lottiefiles.com/
+      lottie: {
+        light: '/lotties/frontend.json',
+        dark: '/lotties/frontend-dark.json',
+      },
+      points: [
+        'Building responsive static websites with Next.js',
+        'Building responsive Single Page Apps  with React.js',
+        'Building Mobile Apps with React-Native',
+        'Building RESTful APIs in Express',
+      ],
+      softwareSkills: [
+        // iconify icons: https://icon-sets.iconify.design/
+        { name: 'html-5', icon: 'vscode-icons:file-type-html' },
+        { name: 'CSS-3', icon: 'vscode-icons:file-type-css' },
+        { name: 'sass', icon: 'vscode-icons:file-type-sass' },
+        { name: 'javaScript', icon: 'vscode-icons:file-type-js-official' },
+        {
+          name: 'typeScript',
+          icon: 'vscode-icons:file-type-typescript-official',
+        },
+        { name: 'python', icon: 'vscode-icons:file-type-python' },
+        { name: 'nodejs', icon: 'logos:nodejs-icon' },
+        { name: 'reactjs', icon: 'logos:react' },
+        { name: 'nextjs', icon: 'logos:nextjs-icon' },
+       { name: 'angularjs', icon: 'logos:angular-icon' },
+       { name: 'laravel', icon: 'logos:laravel-icon' },
+       { name: 'symfony', icon: 'logos:symfony-icon' },
+       { name: 'ionic', icon: 'logos:ionic-icon' },
+        { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
+        { name: 'redux', icon: 'logos:redux' },
+        { name: 'database', icon: 'vscode-icons:file-type-sql' },
+        { name: 'jest', icon: 'vscode-icons:file-type-jest' },
+      ],
+    },
+    {
+      id: getId(),
+      title: 'UI/UX designing',
+      lottie: {
+        light: '/lotties/designing.json',
+        dark: '/lotties/designing-dark.json',
+      },
+      points: [
+        'Experience in designing user-friendly interfaces with figma',
+        'Experience in developing design systems and style guides',
+        'Providing user-friendly design solutions',
+      ],
+      softwareSkills: [
+        { name: 'figma', icon: 'logos:figma' },
+        { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
+        { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
+      ],
+    },
+  ],
+};
+
+
+export const experienceSection: ExperienceSectionType = {
+  title: "where i've worked",
+  experiences: [
+    {
+      company: 'Fiverr | UpWork',
+      companyUrl: '',
+      role: 'Freelancer | Full-Stack Developer',
+      started: 'Feb 2022',
+      upto: 'August 2022',
+      tasks: [
+        'Working on both mobile and web applications',
+        'Fixing bugs and developing high-scale modules',
+      ],
+    },
+    {
+      company: 'Gaea21',
+      companyUrl: 'https://www.repertoirevert.org/',
+      role: 'Full-Stack Developer',
+      started: 'Jan 2021',
+      upto: 'Jul 2021',
+      tasks: [
+        'Conception and development of the mobile application The Green Index',
+        'Migrations of both mobile and web applications from Ionic 3 to 5 and Symfony from 3.4 o 5',
+        'Team and project management',
+        'Report and documentation of the whole application.',
+      ],
+    },
+    {
+      company: 'Technipack',
+      companyUrl: 'https://technipack.tn/',
+      role: 'Web Developer',
+      started: 'Apr 2020',
+      upto: 'August 2020',
+      tasks: [
+        'Conception and Development of an E-commerce website',
+        'Production phase process',
+      ],
+    },
+    {
+      company: 'DevTweaks',
+      companyUrl: 'https://webnetic.vercel.app/',
+      role: 'Web Developer',
+      started: 'Jan 2018',
+      upto: 'June 2018',
+      tasks: [
+        
+      ],
+    },
+  ],
+};
+
+// * Projects Section
+
+export const projectsSection: ProjectsSectionType = {
+  title: 'my projects',
+  projects: [
+    {
+      id: getId(),
+      name: 'Le Répertoire Vert',
+      url: 'https://www.repertoirevert.org/',
+      repo: '#',
+      img: 'https://i.ibb.co/1zFnq56/maxresdefault.jpg',
+      year: 2021,
+      tags: ['Ionic 5', 'Symfony 5', 'MySql', 'Leaflet'],
+    },
+    {
+      id: getId(),
+      name: 'Technipack',
+      url: 'https://technipack.tn/',
+      repo: '#',
+      img: 'https://i.ibb.co/YRWNLSg/technipack.png',
+      year: 2020,
+      tags: ['Laravel 6', 'TailwindCss'],
+    },
+    {
+      id: getId(),
+      name: 'Campi',
+      url: '#',
+      repo: '#',
+      img: 'https://i.ibb.co/XCFNKby/screenshot-rocks.png',
+      year: 2023,
+      tags: ['React-Native', 'NodeJs', 'ExpressJs, MongoDB', 'Mapbox'],
+    },
+    {
+      id: getId(),
+      name: 'Who Pay the bills',
+      url: '#',
+      repo: 'https://github.com/fjerbi/react-native-who-pay-the-bills',
+      img: 'https://i.ibb.co/CBqqTgh/screenshot-rocks-2.png',
+      year: 2023,
+      tags: ['React-Native'],
+    },
+    {
+      id: getId(),
+      name: 'StadiaMaps Turn-By-Turn App',
+      url: '#',
+      repo: 'https://github.com/fjerbi/rn-Maplibre-TurnByTurn',
+      img: 'https://camo.githubusercontent.com/2b40aa479e6507dc43e6f8076e55ebac9142297d6037a127e51a4b8915bdecd8/68747470733a2f2f692e6962622e636f2f4638444679524d2f73746164696176322e706e67',
+      year: 2023,
+      tags: ['React-Native', 'MapLibre', 'StadiaMaps API', 'Géolocation'],
+    },
+    {
+      id: getId(),
+      name: 'React-Native Google Maps Clone',
+      url: 'https://www.youtube.com/playlist?list=PLxytbXx3I1x8bS0scZRTP1fBVaRHUW3la',
+      repo: 'https://github.com/fjerbi/React-Native-Mapbox-Tutorial',
+      img: 'https://i.ibb.co/PCddYHK/hq720.jpg',
+      year: 2023,
+      tags: ['React-Native', 'Mapbox', 'Dynamic Routing', 'Géolocation'],
+    },
+    {
+      id: getId(),
+      name: 'Ready-to-use portfolio template',
+      url: 'https://nextjs-portfolio-starter-template.vercel.app/',
+      repo: 'https://github.com/fjerbi/nextjs-portfolio-starter-template',
+      img: 'https://i.ibb.co/q5SKR8X/template.png',
+      year: 2022,
+      tags: ['NextJS', 'Framer Motion'],
+    },
+  ],
+};
+
+// * Contact Section
+
+export const contactSection: ContactSectionType = {
+  title: 'get in touch',
+  subtitle: "what's next",
+  paragraphs: [
+    'I’m currently looking for a remote job or any new opportunities.',
+    'Whether you have a project to discuss or just want to say hi, my inbox is open for all!',
+  ],
+  link: `mailto:${author.email}`,
+};
+
+// Social Links Section
+
+export const socialSection: SocialSectionType = {
+  socialLinks: [
+    {
+      icon: 'tabler:brand-github',
+      url: socialLinks.github,
+    },
+    {
+      icon: 'mdi:instagram',
+      url: socialLinks.instagram,
+    },
+    {
+      icon: 'lucide:twitter',
+      url: socialLinks.twitter,
+    },
+    {
+      icon: 'lucide:linkedin',
+      url: socialLinks.linkedin,
+    },
+    {
+      icon: 'lucide:facebook',
+      url: socialLinks.facebook,
+    },
+  ],
+};
+
+// Footer Section
+
+export const footerSection: FooterSectionType = {
+  title: 'Design & Built by Firas Jerbi',
+  link: 'https://fjerbi.github.io/',
+};
