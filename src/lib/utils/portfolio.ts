@@ -43,10 +43,10 @@ export const heroSection: HeroSectionType = {
   title: 'Firas Jerbi.',
   tagline: "I'm a Software Engineer | Full-Stack Developer",
   description:
-    "I'm a passionate Full-Stack Developer, I worked on multiple projects on both web and mobile.",
-  specialText: 'Currently available for a job',
+    "I'm an enthusiastic Full-Stack Developer with experience on various web 🖥️ and mobile 📱 projects.",
+  specialText: 'I am currently seeking new job opportunities',
   cta: {
-    title: 'see my resume',
+    title: 'check my resume',
     url: `/${resumeFileName}`,
     hideInDesktop: true,
   },
@@ -59,7 +59,7 @@ export const aboutSection: AboutSectionType = {
   // Paragraphs need to be changed from containers/About.tsx
   // Because it wasn't possible to insert anchor tags like this
   list: {
-    title: 'Here are a few technologies I’ve been working with recently:',
+    title: 'Here are some of the technologies I’ve been actively using recently',
     items: [
       'ReactJs',
       'React-Native',
@@ -90,10 +90,10 @@ export const skillsSection: SkillsSectionType = {
         dark: '/lotties/frontend-dark.json',
       },
       points: [
-        'Building responsive static websites with Next.js',
-        'Building responsive Single Page Apps  with React.js',
-        'Building Mobile Apps with React-Native',
-        'Building RESTful APIs in Express',
+        'Creating responsive static websites with Next.js',
+        'Developing responsive Single Page Apps using React.js',
+        'Crafting mobile applications with React-Native',
+        'Constructing RESTful APIs using ExpressJs',
       ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
@@ -109,10 +109,10 @@ export const skillsSection: SkillsSectionType = {
         { name: 'nodejs', icon: 'logos:nodejs-icon' },
         { name: 'reactjs', icon: 'logos:react' },
         { name: 'nextjs', icon: 'logos:nextjs-icon' },
-       { name: 'angularjs', icon: 'logos:angular-icon' },
-       { name: 'laravel', icon: 'logos:laravel-icon' },
-       { name: 'symfony', icon: 'logos:symfony-icon' },
-       { name: 'ionic', icon: 'logos:ionic-icon' },
+        { name: 'angularjs', icon: 'logos:angular-icon' },
+        { name: 'laravel', icon: 'logos:laravel-icon' },
+        { name: 'symfony', icon: 'logos:symfony-icon' },
+        { name: 'ionic', icon: 'logos:ionic-icon' },
         { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
         { name: 'redux', icon: 'logos:redux' },
         { name: 'database', icon: 'vscode-icons:file-type-sql' },
@@ -127,9 +127,10 @@ export const skillsSection: SkillsSectionType = {
         dark: '/lotties/designing-dark.json',
       },
       points: [
-        'Experience in designing user-friendly interfaces with figma',
-        'Experience in developing design systems and style guides',
-        'Providing user-friendly design solutions',
+
+        'Proficiency in creating user-friendly interfaces with Figma',
+        'Competence in establishing design systems and style guides',
+        'Delivering user-friendly design solutions',
       ],
       softwareSkills: [
         { name: 'figma', icon: 'logos:figma' },
@@ -186,7 +187,7 @@ export const experienceSection: ExperienceSectionType = {
       started: 'Jan 2018',
       upto: 'June 2018',
       tasks: [
-        
+
       ],
     },
   ],
@@ -269,8 +270,8 @@ export const contactSection: ContactSectionType = {
   title: 'get in touch',
   subtitle: "what's next",
   paragraphs: [
-    'I’m currently looking for a remote job or any new opportunities.',
-    'Whether you have a project to discuss or just want to say hi, my inbox is open for all!',
+    'I’m presently in search of remote employment or exploring new career prospects',
+    'Whether you’d like to discuss a project or simply drop a friendly greeting, my inbox welcomes all!',
   ],
   link: `mailto:${author.email}`,
 };

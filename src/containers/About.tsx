@@ -24,12 +24,11 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-          I'm Firas Jerbi, a Software Engineer | Full stack Js Developer, and currently working
-           on my second Master's 
-          Degree in Management and computer science Offered by <b>Westsächsische Hochschule Zwickau.</b>
+
+            I am Firas Jerbi, a Software Engineer and Full-Stack JavaScript Developer. Currently, I am pursuing my second Master's Degree in Management and Computer Science through the program offered by <b>Westsächsische Hochschule Zwickau.</b>
           </p>
-        
-         
+
+
           {list && (
             <>
               <p>{list.title}</p>
