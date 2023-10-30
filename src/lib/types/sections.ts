@@ -1,6 +1,7 @@
 import {
   CTAType,
   ExperienceType,
+  HackathonType,
   NavLinkType,
   ProjectType,
   SocialLinkType,
@@ -61,6 +62,9 @@ export interface ContactSectionType extends Section {
   subtitle?: string;
   paragraphs: string[];
   link: string;
+}
+export interface hackathonSectionType extends Section {
+  hackathons: HackathonType[];
 }
 
 export interface SocialSectionType {

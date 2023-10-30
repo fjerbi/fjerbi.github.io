@@ -33,7 +33,15 @@ export type ProjectType = {
   tags: string[];
   repo: string;
 };
-
+export type HackathonType = {
+  id: string;
+  name: string;
+  url: string;
+  year: number;
+  img: string;
+  tags: string[];
+  repo: string;
+};
 export type StringKeyValueType = {
   [link: string]: string;
 };
