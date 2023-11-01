@@ -19,6 +19,7 @@ import type { NextPage } from 'next';
 const Home: NextPage = () => {
   return (
     <>
+    <meta name="google-site-verification" content="NEDmAy1kKSil4bqazgW-WssV1GsyP6T_-TtbFejvHQs" />
       <Layout>
         <Hero />
         <About />
