@@ -259,7 +259,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/fjerbi/nextjs-portfolio-starter-template',
       img: 'https://i.ibb.co/q5SKR8X/template.png',
       year: 2022,
-      tags: ['NextJS', 'Framer Motion'],
+      tags: ['NextJS', 'Framer Motion', 'TailwindCss'],
     },
   ],
 };
