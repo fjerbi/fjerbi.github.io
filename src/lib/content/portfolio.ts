@@ -19,10 +19,10 @@ export const author = {
 export const seoData = {
   title: 'Firas Jerbi | Full-Stack Developer',
   description:
-    'Firas Jerbi is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Firas Jerbi is a full-stack developer who specializes in building Web and Mobile projects and works on both frontend and backend',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
+    'https://i.ibb.co/g6KM0tG/Capture.png',
   url: 'https://fjerbi.github.io/',
   keywords: [
     'Firas',
