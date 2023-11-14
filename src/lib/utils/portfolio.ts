@@ -219,9 +219,9 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Campi',
-      url: '#',
+      url: 'https://play.google.com/store/apps/details?id=com.fjerbi.campi',
       repo: '#',
-      img: 'https://i.ibb.co/XCFNKby/screenshot-rocks.png',
+      img: 'https://play-lh.googleusercontent.com/0xSBOc0tVHotkxL0geELXNMqBZLy-3wepJq0B122p_Wv6noe8tJKhKGzLWfaXLy737o=w2560-h1440-rw',
       year: 2023,
       tags: ['React-Native', 'NodeJs', 'ExpressJs, MongoDB', 'Mapbox'],
     },
