@@ -221,7 +221,7 @@ export const projectsSection: ProjectsSectionType = {
       name: 'Campi',
       url: 'https://play.google.com/store/apps/details?id=com.fjerbi.campi',
       repo: '#',
-      img: 'https://play-lh.googleusercontent.com/0xSBOc0tVHotkxL0geELXNMqBZLy-3wepJq0B122p_Wv6noe8tJKhKGzLWfaXLy737o=w2560-h1440-rw',
+      img: 'https://play-lh.googleusercontent.com/YQIaA9cnavU-hc58LVzL_0-R2YVbtadKcrYvBLhPl8KDarvqJ5MBm6SKatHxET1_WVs9=w2560-h1440-rw',
       year: 2023,
       tags: ['React-Native', 'NodeJs', 'ExpressJs, MongoDB', 'Mapbox'],
     },
