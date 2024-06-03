@@ -146,6 +146,17 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
+      company: 'Treibstoff Evolution GmbH',
+      companyUrl: '',
+      role: 'Front-End Developer | Mobile Developer',
+      started: 'Jan 2024',
+      upto: 'May 2024',
+      tasks: [
+        'Working on the iQuest mobile Application',
+        'Technologies used: React-Native, Typescript, TailwindCSS, PHP, Laravel, Github, Jira',
+      ],
+    },
+    {
       company: 'Fiverr | UpWork',
       companyUrl: '',
       role: 'Freelancer | Full-Stack Developer',

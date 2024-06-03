@@ -21,6 +21,11 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'camo.githubusercontent.com',
         pathname: '/**',
       },
