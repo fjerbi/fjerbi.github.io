@@ -41,9 +41,9 @@ export const navbarSection: NavbarSectionType = {
 export const heroSection: HeroSectionType = {
   subtitle: 'Hi, my name is',
   title: 'Firas Jerbi.',
-  tagline: "I'm a Software Engineer | Full-Stack Developer",
+  tagline: "I'm a Software Engineer | Front-End Developer",
   description:
-    "I'm an enthusiastic Full-Stack Developer with experience on various web 🖥️ and mobile 📱 projects.",
+    "I'm an enthusiastic Front-End Developer with multiple experiences on various web 🖥️ and mobile 📱 projects.",
   specialText: 'I am currently seeking new job opportunities',
   cta: {
     title: 'check my resume',
@@ -83,7 +83,7 @@ export const skillsSection: SkillsSectionType = {
   skills: [
     {
       id: getId(),
-      title: 'full stack development',
+      title: 'Front-End development',
       // animation lottie file: https://lottiefiles.com/
       lottie: {
         light: '/lotties/frontend.json',
@@ -146,6 +146,23 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
+      company: ' Westsächsische Hochschule Zwickau',
+      companyUrl: '',
+      role: 'Research Assistant',
+      started: 'Oct 2024',
+      upto: 'Dec 2024',
+      tasks: [
+        'Implementation and organisation of workshops and two conferences, one of which in Tunisia',
+        'Implementation and coordination of an online seminar to consolidate the results',
+        'Project management and administration, achieving project outcomes and outputs',
+        'Development of two new multidisciplinary courses with partners',
+        'Conducting literature research and analysis to develop workshop materials for the conferences',
+        'Preparation and presentation of lectures at the planned scientific conferences',
+        'Documentation of the workshops, the technical seminar and the online conference',
+        'Publication of a results report'
+      ],
+    },
+    {
       company: 'Treibstoff Evolution GmbH',
       companyUrl: '',
       role: 'Front-End Developer | Mobile Developer',
@@ -157,7 +174,7 @@ export const experienceSection: ExperienceSectionType = {
       ],
     },
     {
-      company: 'Fiverr | UpWork',
+      company: 'UpWork',
       companyUrl: '',
       role: 'Freelancer | Full-Stack Developer',
       started: 'Feb 2022',

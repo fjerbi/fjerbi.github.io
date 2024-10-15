@@ -25,7 +25,7 @@ const About = () => {
         <div className="space-y-4 lg:w-3/5">
           <p>
 
-            I am Firas Jerbi, a Software Engineer and Full-Stack JavaScript Developer. Currently, I am pursuing my second Master's Degree in Management and Computer Science through the program offered by <b>Westsächsische Hochschule Zwickau.</b>
+            I am Firas Jerbi, a Software Engineer and Front-End Developer. Currently, I am pursuing a double Master's Degree in Management and Computer Science through the program offered by <b>Westsächsische Hochschule Zwickau.</b>
           </p>
 
 
