@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'  // Importing the usePathname hook
@@ -14,12 +13,13 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const getLinkClassName = (path) => {
+  // Define the type of 'path' parameter explicitly
+  const getLinkClassName = (path: string) => {
     return pathname === path
       ? 'block rounded bg-gray-700 px-3 py-2 text-white dark:text-white transition-all duration-100 ease-in-out' // Active link styles
       : 'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-gray-700 md:dark:hover:bg-transparent md:dark:hover:text-gray-500 transition-all duration-300 ease-in-out' // Inactive link styles
   }
-  
+
   return (
     <nav className='border-gray-200 bg-white dark:bg-gray-900'>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4'>
