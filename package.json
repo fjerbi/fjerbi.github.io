@@ -9,8 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib ./public"
+    "lint": "next lint"
+
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
