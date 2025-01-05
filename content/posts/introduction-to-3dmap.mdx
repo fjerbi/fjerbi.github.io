@@ -1,0 +1,160 @@
+---
+  title: Integrating Mapbox with React Native and TypeScript
+  summary: Step-by-step guide to integrating Mapbox with React Native to display maps, markers, and navigation features.
+  image: /images/posts/mapbox_3d.png
+  author: 'Firas Jerbi'
+  publishedAt: '2024-08-08'
+---
+
+# Integrating Mapbox with React Native and TypeScript
+
+
+As mentioned in the title, we will be working on a React Native project using TypeScript, integrating full map features such as displaying a map, markers, a navigation system, multiple customized markers, and more. Let’s start with the basic step: integrating the map into our React Native project.
+
+## Step 1: Create a New React Native Project
+To create a blank React Native project with a TypeScript template, use the following command:
+
+```bash
+npx react-native init MyProjectName --template react-native-template-typescript
+```
+
+> **Note:** Ensure you have the React Native CLI installed globally by running:
+>
+```bash
+npm install -g react-native-cli
+```
+
+## Step 2: Install Mapbox
+Navigate to your project root folder and install the Mapbox module:
+
+```bash
+npm install --save @rnmapbox/maps
+```
+
+## Step 3: Configure Android for Mapbox
+### Update `build.gradle`
+Inside the `android` folder, locate the `build.gradle` file and overwrite the Mapbox dependencies in `android/build.gradle > buildscript > ext`:
+
+```groovy
+buildscript {
+    ext {
+        // ...
+        RNMapboxMapsImpl = "mapbox" // required for v10
+    }
+}
+```
+
+### Add the Mapbox Maven Repo
+Add the Mapbox Maven repository in `android/build.gradle`:
+
+```groovy
+allprojects {
+    repositories {
+        // ...other repos
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = 'mapbox'
+                password = '' // Add your Mapbox token here
+            }
+        }
+    }
+}
+```
+
+### Final Build File Example
+Your `build.gradle` should look like this:
+
+```groovy
+buildscript {
+    ext {
+        buildToolsVersion = "31.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 31
+        targetSdkVersion = 31
+        RNMapboxMapsImpl = "mapbox"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.2.1")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "$rootDir/../node_modules/react-native/android" }
+        google()
+        maven { url 'https://www.jitpack.io' }
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = 'mapbox'
+                password = '' // Add your Mapbox token here
+            }
+        }
+    }
+}
+```
+
+## Step 4: Add Basic Mapbox Code
+Open `App.tsx` and add the following:
+
+```tsx
+import { View, StyleSheet } from 'react-native';
+import MapboxGL from '@rnmapbox/maps';
+
+MapboxGL.setAccessToken(''); // Paste your token here
+MapboxGL.setConnected(true);
+MapboxGL.setTelemetryEnabled(false);
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <MapboxGL.MapView
+        style={styles.map}
+        styleURL="mapbox://styles/mapbox/streets-v12"
+        rotateEnabled={true}
+      >
+        <MapboxGL.Camera
+          zoomLevel={15}
+          centerCoordinate={[10.181667, 36.806389]}
+          pitch={60}
+          animationMode={'flyTo'}
+          animationDuration={6000}
+        />
+        <MapboxGL.PointAnnotation id="marker" coordinate={[10.181667, 36.806389]}>
+          <View />
+        </MapboxGL.PointAnnotation>
+      </MapboxGL.MapView>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  map: {
+    flex: 1,
+  },
+});
+
+export default App;
+```
+
+## Conclusion
+This code creates a full-screen map with a simple marker at the specified coordinates. This is just the beginning. In future tutorials, we will explore advanced functionalities like customized markers, navigation systems, and more.
+
+
+
+[> **Tip:** Watch the complete series on my YouTube channel for detailed explanations. Don’t forget to subscribe to stay updated with the React Native and Mapbox series!](https://www.youtube.com/playlist?list=PLxytbXx3I1x8bS0scZRTP1fBVaRHUW3la)
