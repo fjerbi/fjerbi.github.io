@@ -21,9 +21,7 @@ export const metadata: Metadata = {
     'Front-End Developer, Firas Jerbi, Software Engineer, Web Developer, Mobile App Developer, React Developer, JavaScript Developer, Front-End Technologies, Front-End Frameworks, Open-Source Contributor, Web Application Developer, Mobile Application Developer, Web Development Portfolio, Full Stack Developer, Developer Portfolio, Software Engineer in Germany, React.js Developer, Web and Mobile Development, Front-End Frameworks Expert, Modern Web Development, Open-Source Projects, Learn New Technologies',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
     url: 'https://fjerbi.github.io/',
-    site_name: 'Firas Jerbi - Frontend Developer',
     title: 'Firas Jerbi - Frontend Developer',
     description: `I'm a software engineer | Front-End developer based in Germany. I'm passionate about developing web and mobile applications. I love to learn new technologies and explore new front-end frameworks. I'm also a big fan of open-source projects and contributing to them. If you're interested in my work, check out my portfolio.`,
    
