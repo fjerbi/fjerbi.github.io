@@ -73,7 +73,7 @@ export const aboutSection: AboutSectionType = {
       'ExpressJs',
     ],
   },
-  img: '/firasjerbi.jpg',
+  img: '/firasjerbiv2.png',
 };
 
 // * Skills Section
@@ -250,7 +250,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://play.google.com/store/apps/details?id=com.fjerbi.campi',
       repo: '#',
       img: 'https://play-lh.googleusercontent.com/YQIaA9cnavU-hc58LVzL_0-R2YVbtadKcrYvBLhPl8KDarvqJ5MBm6SKatHxET1_WVs9=w2560-h1440-rw',
-      year: 2023,
+      year: 2025,
       tags: ['React-Native', 'NodeJs', 'ExpressJs, MongoDB', 'Mapbox'],
     },
     {
