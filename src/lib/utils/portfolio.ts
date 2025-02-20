@@ -228,6 +228,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'UIllusion',
+      url: '#',
+      repo: '#',
+      img: 'https://i.ibb.co/N2nXjRC7/UIllusion-02-20-2025-02-31-PM.png',
+      year: 2025,
+      tags: ['NextJs', 'Openrouter.ai', 'Framer-Motion'],
+    },
+    {
+      id: getId(),
       name: 'Le Répertoire Vert',
       url: 'https://www.repertoirevert.org/',
       repo: '#',
