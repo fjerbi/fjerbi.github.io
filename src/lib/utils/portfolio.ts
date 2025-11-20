@@ -146,80 +146,73 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
-      company: ' Westsächsische Hochschule Zwickau',
+      company: 'Westsächsische Hochschule Zwickau (WHZ)',
       companyUrl: '',
       role: 'Research Assistant',
       started: 'Oct 2024',
       upto: 'Dec 2024',
       tasks: [
-        'Implementation and organisation of workshops and two conferences, one of which in Tunisia',
-        'Implementation and coordination of an online seminar to consolidate the results',
-        'Project management and administration, achieving project outcomes and outputs',
-        'Development of two new multidisciplinary courses with partners',
-        'Conducting literature research and analysis to develop workshop materials for the conferences',
-        'Preparation and presentation of lectures at the planned scientific conferences',
-        'Documentation of the workshops, the technical seminar and the online conference',
-        'Publication of a results report'
+        'Coordination and technical support of the TAZIZ project in collaboration with WHZ and UTM-ENIT Tunis (DAAD funding)',
+        'Organization of project meetings, tracking work packages, and preparing status reports',
+        'Analysis, preparation, and visualization of project data for decision support and process optimization'
       ],
     },
     {
       company: 'Treibstoff Evolution GmbH',
       companyUrl: '',
-      role: 'Front-End Developer | Mobile Developer',
+      role: 'Frontend Developer',
       started: 'Jan 2024',
       upto: 'May 2024',
       tasks: [
-        'Working on the iQuest mobile Application',
-        'Technologies used: React-Native, Typescript, TailwindCSS, PHP, Laravel, Github, Jira',
-      ],
-    },
-    {
-      company: 'UpWork',
-      companyUrl: '',
-      role: 'Freelancer | Full-Stack Developer',
-      started: 'Feb 2022',
-      upto: 'August 2022',
-      tasks: [
-        'Working on both mobile and web applications',
-        'Fixing bugs and developing high-scale modules',
+        'Design, development, and implementation of new features for the iQuest mobile application using React Native, TypeScript, and Laravel',
+        'Optimization of code quality, performance, and UI responsiveness through refactoring and efficient component architecture',
+        'Creation of modern, user-centered UI/UX interfaces to enhance user experience',
+        'Collaboration within an agile development team using GitHub, code reviews, and task management in Jira'
       ],
     },
     {
       company: 'Gaea21',
       companyUrl: 'https://www.repertoirevert.org/',
-      role: 'Full-Stack Developer',
+      role: 'Full-Stack Developer & Project Lead (Internship)',
       started: 'Jan 2021',
       upto: 'Jul 2021',
       tasks: [
-        'Conception and development of the mobile application The Green Index',
-        'Migrations of both mobile and web applications from Ionic 3 to 5 and Symfony from 3.4 o 5',
-        'Team and project management',
-        'Report and documentation of the whole application.',
+        'Development of the Green Index web and mobile application using Ionic 4, Symfony 4, and REST APIs',
+        'Implementation of interactive maps and data visualizations using Mapbox and custom UI components',
+        'Leadership of an interdisciplinary team, sprint planning, and coordination of development tasks',
+        'Ensuring code quality, version control, and collaborative development through GitHub'
+      ],
+    },
+    {
+      company: 'NetCapital',
+      companyUrl: '',
+      role: 'Full-Stack Developer (University Project)',
+      started: 'Mar 2020',
+      upto: 'Jul 2020',
+      tasks: [
+        'Development of a website generator for customizable products as part of an academic project',
+        'Design and implementation of the complete software lifecycle – from architecture to deployment',
+        'Implementation of frontend and backend functionalities using the MERN stack (MongoDB, Express.js, React, Node.js)',
+        'Creation of a modular, scalable structure with reusable components and RESTful APIs',
+        'Integration of dynamic product configuration features and user management to enhance flexibility and user experience'
       ],
     },
     {
       company: 'Technipack',
       companyUrl: 'https://technipack.tn/',
-      role: 'Web Developer',
-      started: 'Apr 2020',
-      upto: 'August 2020',
-      tasks: [
-        'Conception and Development of an E-commerce website',
-        'Production phase process',
-      ],
-    },
-    {
-      company: 'DevTweaks',
-      companyUrl: 'https://webnetic.vercel.app/',
-      role: 'Web Developer',
+      role: 'Full-Stack Developer',
       started: 'Jan 2018',
-      upto: 'June 2018',
+      upto: 'Dec 2020',
       tasks: [
-
+        'Development and maintenance of web and mobile applications using ReactJS, React Native, Laravel, and REST APIs',
+        'Integration of PostgreSQL and MongoDB databases and implementation of secure user management systems',
+        'Modernization of UI/UX designs and performance improvement of legacy applications',
+        'Planning, testing, and deployment of digital projects in an industrial environment in close collaboration with project teams'
       ],
     },
   ],
 };
+
 
 // * Projects Section
 
