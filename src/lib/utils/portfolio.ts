@@ -41,17 +41,16 @@ export const navbarSection: NavbarSectionType = {
 export const heroSection: HeroSectionType = {
   subtitle: 'Hi, my name is',
   title: 'Firas Jerbi.',
-  tagline: "I'm a Software Engineer | Front-End Developer",
+  tagline: "I'm a Software Engineer | Full-Stack Developer",
   description:
-    "I'm an enthusiastic Front-End Developer with multiple experiences on various web 🖥️ and mobile 📱 projects.",
-  specialText: 'I am currently seeking new job opportunities',
+    "I'm an enthusiastic Full-Stack Developer with multiple experiences on various web 🖥️ and mobile 📱 projects.",
+  specialText: 'I am currently seeking new job opportunities in Germany.',
   cta: {
     title: 'check my resume',
     url: `/${resumeFileName}`,
     hideInDesktop: true,
   },
 };
-
 // * About Section
 
 export const aboutSection: AboutSectionType = {
