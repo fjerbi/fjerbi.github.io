@@ -73,7 +73,7 @@ export const aboutSection: AboutSectionType = {
       'ExpressJs',
     ],
   },
-  img: '/firasjerbiv2.png',
+  img: '/me.jpg',
 };
 
 // * Skills Section
@@ -121,6 +121,65 @@ export const skillsSection: SkillsSectionType = {
     },
     {
       id: getId(),
+      title: 'Back-End development',
+      lottie: {
+        light: '/lotties/frontend.json',
+        dark: '/lotties/frontend-dark.json',
+      },
+      points: [
+        'Building RESTful and GraphQL APIs using Node.js, Express.js, and Spring Boot',
+        'Developing server-side applications with Symfony, Laravel, and other frameworks',
+        'Designing and managing databases using MySQL, PostgreSQL, MongoDB, and Firebase',
+        'Implementing authentication, authorization, and security best practices',
+        'Optimizing server-side performance and scalability',
+        'Integrating third-party APIs and microservices',
+      ],
+      softwareSkills: [
+        { name: 'nodejs', icon: 'logos:nodejs-icon' },
+        { name: 'express', icon: 'logos:express' },
+        { name: 'springboot', icon: 'logos:spring-icon' },
+        { name: 'laravel', icon: 'logos:laravel-icon' },
+        { name: 'symfony', icon: 'logos:symfony-icon' },
+        { name: 'mongodb', icon: 'logos:mongodb-icon' },
+        { name: 'firebase', icon: 'logos:firebase' },
+        { name: 'mysql', icon: 'logos:mysql-icon' },
+        { name: 'postgresql', icon: 'logos:postgresql-icon' },
+        { name: 'graphql', icon: 'logos:graphql-icon' },
+        { name: 'docker', icon: 'logos:docker-icon' },
+        { name: 'kubernetes', icon: 'logos:kubernetes-icon' },
+        { name: 'redis', icon: 'logos:redis-icon' },
+        { name: 'jest', icon: 'vscode-icons:file-type-jest' },
+      ],
+    },
+    {
+      id: getId(),
+      title: 'Mobile Development',
+      lottie: {
+        light: '/lotties/frontend.json',
+        dark: '/lotties/frontend-dark.json',
+      },
+      points: [
+        'Building cross-platform mobile apps with React Native and Ionic',
+        'Developing native-like mobile experiences using JavaScript and TypeScript',
+        'Integrating APIs and backend services into mobile applications',
+        'Optimizing mobile performance and implementing offline capabilities',
+        'Publishing apps to Google Play Store and Apple App Store',
+      ],
+      softwareSkills: [
+        { name: 'react-native', icon: 'logos:react' },
+        { name: 'ionic', icon: 'logos:ionic-icon' },
+        { name: 'android', icon: 'logos:android-icon' },
+        { name: 'ios', icon: 'logos:apple-icon' },
+        { name: 'typescript', icon: 'vscode-icons:file-type-typescript-official' },
+        { name: 'javascript', icon: 'vscode-icons:file-type-js-official' },
+        { name: 'redux', icon: 'logos:redux' },
+        { name: 'firebase', icon: 'logos:firebase' },
+      ],
+    },
+
+
+    {
+      id: getId(),
       title: 'UI/UX designing',
       lottie: {
         light: '/lotties/designing.json',
@@ -139,6 +198,7 @@ export const skillsSection: SkillsSectionType = {
       ],
     },
   ],
+
 };
 
 
@@ -221,12 +281,12 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
-      name: 'UIllusion',
-      url: '#',
-      repo: '#',
-      img: 'https://i.ibb.co/N2nXjRC7/UIllusion-02-20-2025-02-31-PM.png',
+      name: 'AIrtisan- Wireframe to Code',
+      url: 'https://github.com/fjerbi/Airtisan',
+      repo: 'https://github.com/fjerbi/Airtisan',
+      img: 'https://i.ibb.co/4ZTTZ27N/scr2.png',
       year: 2025,
-      tags: ['NextJs', 'Openrouter.ai', 'Framer-Motion'],
+      tags: ['NextJs', 'StackblitzSDK', 'Openrouter.ai', 'Framer-Motion'],
     },
     {
       id: getId(),
@@ -240,7 +300,7 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Technipack',
-      url: 'https://technipack.tn/',
+      url: '#',
       repo: '#',
       img: 'https://i.ibb.co/YRWNLSg/technipack.png',
       year: 2020,
@@ -249,9 +309,9 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Campi',
-      url: 'https://play.google.com/store/apps/details?id=com.fjerbi.campi',
+      url: '#',
       repo: '#',
-      img: 'https://play-lh.googleusercontent.com/YQIaA9cnavU-hc58LVzL_0-R2YVbtadKcrYvBLhPl8KDarvqJ5MBm6SKatHxET1_WVs9=w2560-h1440-rw',
+      img: 'https://i.ibb.co/MkxXX0xp/Screenshot-1763677111.png',
       year: 2025,
       tags: ['React-Native', 'NodeJs', 'ExpressJs, MongoDB', 'Mapbox'],
     },
@@ -269,7 +329,7 @@ export const projectsSection: ProjectsSectionType = {
       name: 'StadiaMaps Turn-By-Turn App',
       url: '#',
       repo: 'https://github.com/fjerbi/rn-Maplibre-TurnByTurn',
-      img: 'https://camo.githubusercontent.com/2b40aa479e6507dc43e6f8076e55ebac9142297d6037a127e51a4b8915bdecd8/68747470733a2f2f692e6962622e636f2f4638444679524d2f73746164696176322e706e67',
+      img: 'https://i.ibb.co/kg2kKbZr/maxresdefault.jpg',
       year: 2023,
       tags: ['React-Native', 'MapLibre', 'StadiaMaps API', 'Géolocation'],
     },

@@ -19,7 +19,7 @@ export const author = {
 export const seoData = {
   title: 'Firas Jerbi | Front-End Developer',
   description:
-    'Firas Jerbi is a front-end developer who specializes in building Web and Mobile projects and works on both frontend/backend, web, and mobile',
+    'Firas Jerbi is a full-stack developer who specializes in building Web and Mobile projects and works on both front-end/back-end.',
   author: author.name,
   image:
     'https://i.ibb.co/g6KM0tG/Capture.png',

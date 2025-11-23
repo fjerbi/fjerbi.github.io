@@ -3,7 +3,7 @@ import { author } from '@/lib/content/portfolio';
 import { getId } from '@/lib/utils/helper';
 import { aboutSection } from '@/lib/utils/portfolio';
 
-import { AuthorImage, Link, ListItem, Wrapper } from '@/components';
+import { AuthorImage, ListItem, Wrapper } from '@/components';
 
 import { getSectionAnimation } from '@/styles/animations';
 
@@ -24,10 +24,10 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-
-            I am Firas Jerbi, a Software Engineer and Front-End Developer. Currently, I am pursuing a double Master's Degree in Management and Computer Science through the program offered by <b>Westsächsische Hochschule Zwickau.</b>
+            I am Firas Jerbi, a Software Engineer and Full-Stack Developer.
+            Currently, I am currently looking for a{' '}
+            <b>Full-Time job in Germany</b>
           </p>
-
 
           {list && (
             <>

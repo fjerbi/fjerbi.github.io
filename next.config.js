@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  output:'export',
+  output: 'export',
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -27,6 +27,11 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'camo.githubusercontent.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ibb.co',
         pathname: '/**',
       },
     ],
