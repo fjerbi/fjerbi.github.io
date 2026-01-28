@@ -276,16 +276,34 @@ export const experienceSection: ExperienceSectionType = {
 // * Projects Section
 
 export const projectsSection: ProjectsSectionType = {
-  title: 'my projects',
+  title: 'My Latest Public Projects',
   projects: [
     {
       id: getId(),
       name: 'AIrtisan- Wireframe to Code',
       url: 'https://github.com/fjerbi/Airtisan',
       repo: 'https://github.com/fjerbi/Airtisan',
-      img: 'https://i.ibb.co/4ZTTZ27N/scr2.png',
-      year: 2025,
+      img: 'https://github.com/fjerbi/Airtisan/blob/main/public/scr1.png?raw=true',
+      year: 2026,
       tags: ['NextJs', 'StackblitzSDK', 'Openrouter.ai', 'Framer-Motion'],
+    },
+    {
+      id: getId(),
+      name: 'Campi',
+      url: '#',
+      repo: '#',
+      img: 'https://i.ibb.co/spCkkKjC/1763725203207.jpg',
+      year: 2026,
+      tags: ['React-Native', 'Expo', 'NodeJs', 'ExpressJs, MongoDB', 'Mapbox'],
+    },
+    {
+      id: getId(),
+      name: 'AI Email Spam Detector',
+      url: '#',
+      repo: 'https://github.com/fjerbi/AI-Spam-Detector',
+      img: 'https://i.ibb.co/jZyYnGBY/Chat-GPT-Image-Jan-28-2026-09-17-16-PM.png',
+      year: 2026,
+      tags: ['python']
     },
     {
       id: getId(),
@@ -305,15 +323,7 @@ export const projectsSection: ProjectsSectionType = {
       year: 2020,
       tags: ['Laravel 6', 'TailwindCss'],
     },
-    {
-      id: getId(),
-      name: 'Campi',
-      url: '#',
-      repo: '#',
-      img: 'https://i.ibb.co/MkxXX0xp/Screenshot-1763677111.png',
-      year: 2025,
-      tags: ['React-Native', 'NodeJs', 'ExpressJs, MongoDB', 'Mapbox'],
-    },
+
     {
       id: getId(),
       name: 'Who Pay the bills',
