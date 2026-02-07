@@ -280,6 +280,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'Technipack',
+      url: 'https://technipack.tn/',
+      repo: '#',
+      img: 'https://i.ibb.co/DDf4FbM1/Screenshot-2026-02-07-230513.png',
+      year: 2026,
+      tags: ['NextJs 16', 'TailwindCss', 'Framer-Motion'],
+    },
+    {
+      id: getId(),
       name: 'AIrtisan- Wireframe to Code',
       url: 'https://github.com/fjerbi/Airtisan',
       repo: 'https://github.com/fjerbi/Airtisan',
@@ -314,15 +323,7 @@ export const projectsSection: ProjectsSectionType = {
       year: 2021,
       tags: ['Ionic 5', 'Symfony 5', 'MySql', 'Leaflet'],
     },
-    {
-      id: getId(),
-      name: 'Technipack',
-      url: '#',
-      repo: '#',
-      img: 'https://i.ibb.co/YRWNLSg/technipack.png',
-      year: 2020,
-      tags: ['Laravel 6', 'TailwindCss'],
-    },
+
 
     {
       id: getId(),
