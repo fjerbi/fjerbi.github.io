@@ -19,7 +19,10 @@ import type { NextPage } from 'next';
 const Home: NextPage = () => {
   return (
     <>
-      <meta name="google-site-verification" content="NEDmAy1kKSil4bqazgW-WssV1GsyP6T_-TtbFejvHQs" />
+      <meta
+        name="google-site-verification"
+        content="bGvqA56lOU8jIWPDDN6sbtsU-rJ0Kelp-kyTl_YBKk4"
+      />
       <meta
         name="description"
         content="Firas Jerbi is a full-stack developer who specializes in building Web and Mobile projects and works on both frontend and backend."
