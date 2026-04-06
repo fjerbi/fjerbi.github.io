@@ -3,7 +3,7 @@ import { PROJECTS_INITIALLY } from '@/lib/utils/config';
 import { sortByYear } from '@/lib/utils/helper';
 import { projectsSection } from '@/lib/utils/portfolio';
 
-import { Button, ProjectCard, Wrapper } from '@/components';
+import { Button, ProjectCard, ProjectModal, Wrapper } from '@/components';
 
 import { getSectionAnimation, projectVariants } from '@/styles/animations';
 
@@ -13,16 +13,28 @@ import { useState } from 'react';
 const Projects = () => {
   const { projects, title } = projectsSection;
   const [showMore, setShowMore] = useState(false);
-  const topProjects = projects.slice(0, PROJECTS_INITIALLY);
+  const [selectedProject, setSelectedProject] = useState < typeof projects[0] | null > (null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const topProjects = projects.slice(0, PROJECTS_INITIALLY);
   const visibleProjects = showMore ? projects : topProjects;
+
+  const handleOpenModal = (project: typeof projects[0]) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 300);
+  };
 
   return (
     <Wrapper id="projects" animate={false} {...getSectionAnimation}>
       <motion.h2 className="heading-secondary text-center !mb-12">
         {title}
       </motion.h2>
-      <div className="grid gap-6 grid-cols-auto-250 xs:grid-cols-auto-300 place-items-center">
+      <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 place-items-center">
         {sortByYear(visibleProjects).map((project, i) => {
           if (i < PROJECTS_INITIALLY) {
             return (
@@ -34,6 +46,7 @@ const Projects = () => {
                 whileInView="show"
                 custom={i}
                 viewport={{ once: true }}
+                onClick={() => handleOpenModal(project)}
               />
             );
           }
@@ -46,6 +59,7 @@ const Projects = () => {
               initial="hidden"
               animate="show"
               custom={i - PROJECTS_INITIALLY}
+              onClick={() => handleOpenModal(project)}
             />
           );
         })}
@@ -60,6 +74,12 @@ const Projects = () => {
           {showMore ? 'show less' : 'show more'}
         </Button>
       )}
+
+      <ProjectModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </Wrapper>
   );
 };

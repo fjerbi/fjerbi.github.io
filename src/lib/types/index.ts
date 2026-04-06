@@ -30,8 +30,11 @@ export type ProjectType = {
   url: string;
   year: number;
   img: string;
+  images?: string[];
   tags: string[];
   repo: string;
+  description?: string;
+  features?: string[];
 };
 export type HackathonType = {
   id: string;

@@ -11,7 +11,9 @@ import SocialIcon from './socials/SocialIcon';
 import SocialLink from './socials/SocialLink';
 import AuthorImage from './ui/AuthorImage';
 import Cursor from './ui/Cursor';
+import ImageCarousel from './ui/ImageCarousel';
 import ProjectCard from './ui/ProjectCard';
+import ProjectModal from './ui/ProjectModal';
 import ShowLottie from './ui/ShowLottie';
 import Sidebar from './ui/Sidebar';
 import Wrapper from './ui/Wrapper';
@@ -21,10 +23,12 @@ export {
   Button,
   Cursor,
   DarkModeButton,
+  ImageCarousel,
   Link,
   ListItem,
   NavButton,
   ProjectCard,
+  ProjectModal,
   ShowLottie,
   Sidebar,
   Skill,
@@ -32,5 +36,6 @@ export {
   SocialIcon,
   SocialLink,
   TabList,
-  Wrapper,
+  Wrapper
 };
+

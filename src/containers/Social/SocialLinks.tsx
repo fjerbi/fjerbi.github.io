@@ -1,3 +1,4 @@
+'use client';
 import { socialSection } from '@/lib/utils/portfolio';
 
 import { SocialIcon } from '@/components';
