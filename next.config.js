@@ -2,6 +2,7 @@
 module.exports = {
   output: 'export',
   distDir: 'out',
+  basePath: '',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
   reactStrictMode: true,
