@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       />
       <meta
         name="description"
-        content="Firas Jerbi is a full-stack developer who specializes in building Web and Mobile projects and works on both frontend and backend."
+        content="Firas Jerbi is a Full Stack Developer based in Germany specializing in React, Next.js, Node.js, and mobile development. Currently seeking full-time employment opportunities."
       />
       <Layout>
         <Hero />
