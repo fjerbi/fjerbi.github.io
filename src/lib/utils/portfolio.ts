@@ -72,7 +72,7 @@ export const aboutSection: AboutSectionType = {
       'ExpressJs',
     ],
   },
-  img: '/me.jpg',
+  img: '/me.png',
 };
 
 // * Skills Section
