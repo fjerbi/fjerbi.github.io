@@ -7,6 +7,7 @@ module.exports = {
   skipTrailingSlashRedirect: true,
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
